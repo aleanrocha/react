@@ -1,0 +1,7 @@
+.destaqueContent {
+  border: 1.5px solid #fff;
+  border-radius: 10px;
+  transition: .5s;
+
+}
+.destaqueContent:hover {background-color: rgb(77, 77, 77);}

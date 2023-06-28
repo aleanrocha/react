@@ -1,7 +1,9 @@
+import styles from './SayMyName.module.css'
+
 function SayMyName(props) {
   return (
     <div>
-      <p>Fala ai {props.name}, suave!</p>
+      <p className={styles.destaqueContent} >Fala ai {props.name}, suave!</p>
     </div>
   )
 }
