@@ -1,5 +1,6 @@
 import './App.css';
 import SayMyName from './components/SayMyName';
+import List from './components/List';
 
 function App() {
   const name = 'Tiringa'
@@ -7,8 +8,9 @@ function App() {
   return (
     <div className="App">
       <h1>Curso de react</h1>
-      <h2>Adicionando css</h2>
+      <h2>Utilizando Fragments</h2>
       <SayMyName name="Dev" />
+      <List/>
     </div>
   );
 }

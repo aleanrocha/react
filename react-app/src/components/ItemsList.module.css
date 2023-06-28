@@ -1,0 +1,12 @@
+.listContent {
+  list-style: none;
+  width: 200px;
+  background-color: gray;
+  margin: auto;
+  padding: 20px;
+}
+.listElements {
+  padding: 10px 0;
+  border: 1.5px solid black;
+  color: #fff;
+}
