@@ -1,15 +1,27 @@
 import styles from './ItemsList.module.css'
-function ItemsList() {
+import PropTypes from 'prop-types'
+function ItemsList({curso, ano}) {
   return (
     <>
-      <ul className={styles.listContent}>
-        <li className={styles.listElements}>HTML</li>
-        <li className={styles.listElements}>CSS</li>
-        <li className={styles.listElements}>JAVASCRIPT</li>
-        <li className={styles.listElements}>NODEJS</li>
-        <li className={styles.listElements}>JAVA</li>
-      </ul>
+      <li className={styles.listElements} >Curso: {curso} - Ano: {ano} </li>
+    
     </>
   )
 }
+ItemsList.propTypes = {
+  curso: PropTypes.string.isRequired,
+  ano: PropTypes.number.isRequired
+}
+
+/*
+
+  Valores padrões
+
+  ItemsList.defaultProps = {
+    curso: 'Faltou o Curso',
+    ano: 0
+  }
+
+*/
+
 export default ItemsList

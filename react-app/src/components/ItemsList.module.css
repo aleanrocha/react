@@ -1,6 +1,6 @@
 .listContent {
   list-style: none;
-  width: 200px;
+  width: 320px;
   background-color: gray;
   margin: auto;
   padding: 20px;
@@ -9,4 +9,6 @@
   padding: 10px 0;
   border: 1.5px solid black;
   color: #fff;
+  transition: .5s;
 }
+.listElements:hover {background-color: rgb(77, 77, 77);}
