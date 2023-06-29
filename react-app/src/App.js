@@ -1,17 +1,16 @@
-import './App.css';
-import SayMyName from './components/SayMyName';
-import List from './components/List';
+import './App.css'
+import Evento from './components/Evento'
+import Form from './components/Form'
 
 function App() {
-  const name = 'Tiringa'
-  const url = 'https://via.placeholder.com/150'
   return (
     <div className="App">
       <h1>Curso de react</h1>
-      <h2>Avançando em props (parte 2) </h2>
-      <SayMyName name="Dev" />
-      <List/>
+      <h2>Trabalhando com Eventos em React.</h2>
+      <Evento />
+      {/* <Form /> */}
     </div>
-  );
+  )
 }
-export default App;
+
+export default App
