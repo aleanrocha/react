@@ -1,0 +1,26 @@
+main {padding: 10px 0;}
+form {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto;
+}
+form label {
+  display: block;
+  text-align: left;
+  padding: 0 50px;
+}
+form input {
+  padding: 10px;
+  margin: 10px 0;
+}
+form input[type=submit] {
+  background-color: darkblue;
+  color: #fff;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
