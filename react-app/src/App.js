@@ -1,12 +1,11 @@
 import './App.css'
-import Form from './components/Form'
-
+import Evento from './components/Evento'
 function App() {
   return (
     <div className="App">
       <h1>Curso de react</h1>
-      <h2>Utilizando o (useState)</h2>
-      <Form />
+      <h2>Passando eventos por props</h2>
+      <Evento />
     </div>
   )
 }
