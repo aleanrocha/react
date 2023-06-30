@@ -1,2 +1,2 @@
 # react
-Curso de react
+Curso de reactJS
