@@ -1,13 +1,12 @@
 import './App.css'
-import Evento from './components/Evento'
+import Condicional from './components/Condicional'
 function App() {
   return (
     <div className="App">
       <h1>Curso de react</h1>
-      <h2>Passando eventos por props</h2>
-      <Evento />
+      <h2>Renderização condicional</h2>
+      <Condicional />
     </div>
   )
 }
-
 export default App
