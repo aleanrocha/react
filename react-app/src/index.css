@@ -5,6 +5,7 @@ body {
 }
 h1 {text-transform: uppercase;}
 p {
+  background-color: rgb(198, 227, 252);
   padding: 10px;
   width: 200px;
   margin: 10px auto;
