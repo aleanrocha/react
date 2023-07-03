@@ -1,0 +1,21 @@
+.header {
+  padding: 40px;
+  background-color: black;
+}
+.list {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.list a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .5s;
+}
+.list a:hover {
+  background-color: gray;
+}

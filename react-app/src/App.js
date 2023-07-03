@@ -1,16 +1,21 @@
-import './App.css'
-import { useState } from 'react'
-import YourName from './components/YourName'
-import Saudacao from './components/Saudacao'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import Home from './components/pages/Home'
+import Empresa from './components/pages/Empresa'
+import Contato from './components/pages/Contato'
+
 function App() {
-  const [name, setName] = useState()
   return (
-    <div className="App">
-      <h1>Curso de react</h1>
-      <h2>Trabalhando com o (State Lift)</h2>
-      <YourName setName={setName} />
-      <Saudacao nome={name} />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/empresa' element={<Empresa />}></Route>
+        <Route path='/contato' element={<Contato />}></Route>
+      </Routes>
+      <Footer />
+    </Router>
   )
 }
 export default App
