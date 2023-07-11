@@ -5,6 +5,9 @@ const Select = ({text, name, option, hendleOnChange, value}) => {
       <label htmlFor={name}>{text}</label>
       <select name={name} id={name} >
         <option>Selecione a opção</option>
+        {option.map(op => (
+          <option value={op.id} key={op.id}>{op.name}</option>
+        ))}
       </select>
     </div>
   )
