@@ -19,7 +19,7 @@ const NewProject = () => {
     .then((res) => res.json())
     .then((data) => {
       // redirect
-      navigate('/Projects', {message: 'Projeto criado com sucesso!'})
+      navigate('/Projects', {state: {message: 'Projeto criado com sucesso!'}})
     })
     .catch(err => console.log(err))
   }
