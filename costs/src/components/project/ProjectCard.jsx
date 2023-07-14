@@ -16,7 +16,7 @@ const projectCard = ({ id, name, budget, category, handleRemove}) => {
         <span className={`${styles[category.toLowerCase()]}`}></span> {category}
       </p>
       <div className={styles.project_card_options}>
-        <Link to='/'>
+        <Link to={`/Project/${id}`}>
           <BsPencil /> Editar
         </Link>
         <button onClick={remove}>

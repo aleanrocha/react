@@ -1,5 +1,19 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "project_name": "Projeto 01",
+      "project_budget": "1250.54",
+      "category": {
+        "id": [
+          "1"
+        ],
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,
