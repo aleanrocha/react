@@ -12,3 +12,12 @@
   justify-content: flex-start;
   flex-direction: column;
 }
+.project_card_align {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding-bottom: 3em;
+}

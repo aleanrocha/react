@@ -1,7 +1,20 @@
 {
   "projects": [
     {
-      "project_name": "tech",
+      "project_name": "Projeto 01",
+      "project_budget": "1250",
+      "category": {
+        "id": [
+          "4"
+        ],
+        "name": "Desenvolvimento"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "project_name": "projeto 02",
       "project_budget": "900",
       "category": {
         "id": [
@@ -11,89 +24,50 @@
       },
       "costs": 0,
       "services": [],
-      "id": 1
-    },
-    {
-      "project_name": "projeto final",
-      "project_budget": "1250",
-      "category": {
-        "id": [
-          "2"
-        ],
-        "name": "Planejamento"
-      },
-      "costs": 0,
-      "services": [],
       "id": 2
     },
     {
-      "project_name": "teste1234567",
-      "project_budget": "1321313",
+      "project_name": "projeto 03",
+      "project_budget": "12333",
       "category": {
         "id": [
-          "2"
+          "1"
         ],
-        "name": "Planejamento"
+        "name": "Infra"
       },
       "costs": 0,
       "services": [],
       "id": 3
     },
     {
-      "project_name": "oooi",
-      "project_budget": "90",
+      "project_name": "Projeto 04",
+      "project_budget": "43212",
       "category": {
         "id": [
-          "1"
+          "2"
         ],
-        "name": "Infra"
+        "name": "Planejamento"
       },
       "costs": 0,
       "services": [],
       "id": 4
     },
     {
-      "project_name": "dff",
-      "project_budget": "44444444",
+      "project_name": "Projeto 05",
+      "project_budget": "876",
       "category": {
         "id": [
-          "1"
+          "2"
         ],
-        "name": "Infra"
+        "name": "Planejamento"
       },
       "costs": 0,
       "services": [],
       "id": 5
     },
     {
-      "project_name": "r6f",
-      "project_budget": "44444",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "project_name": "dhfffff",
-      "project_budget": "77777777",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "project_name": "rgdfffdddddd",
-      "project_budget": "5666666",
+      "project_name": "Projeto 05",
+      "project_budget": "670",
       "category": {
         "id": [
           "3"
@@ -102,124 +76,33 @@
       },
       "costs": 0,
       "services": [],
+      "id": 6
+    },
+    {
+      "project_name": "tettando",
+      "project_budget": "1234",
+      "category": {
+        "id": [
+          "4"
+        ],
+        "name": "Desenvolvimento"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "project_name": "teste brasil",
+      "project_budget": "1234",
+      "category": {
+        "id": [
+          "1"
+        ],
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": [],
       "id": 8
-    },
-    {
-      "project_name": "rrrrrrrrrr",
-      "project_budget": "555555555",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 9
-    },
-    {
-      "project_name": "trddddddd",
-      "project_budget": "666",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "project_name": "tetete",
-      "project_budget": "33333333",
-      "category": {
-        "id": [
-          "2"
-        ],
-        "name": "Planejamento"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 11
-    },
-    {
-      "project_name": "fggggggg",
-      "project_budget": "5555555555",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 12
-    },
-    {
-      "project_name": "fdddddddddd",
-      "project_budget": "9999999",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 13
-    },
-    {
-      "project_name": "dsffff",
-      "project_budget": "55555",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 14
-    },
-    {
-      "project_name": "testando",
-      "project_budget": "2500",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 15
-    },
-    {
-      "project_name": "testando",
-      "project_budget": "2500",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 16
-    },
-    {
-      "project_name": "techbrasil",
-      "project_budget": "12000000",
-      "category": {
-        "id": [
-          "1"
-        ],
-        "name": "Infra"
-      },
-      "costs": 0,
-      "services": [],
-      "id": 17
     }
   ],
   "categories": [
