@@ -12,6 +12,19 @@
       "costs": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "project_name": "Projeto 02",
+      "project_budget": "9500",
+      "category": {
+        "id": [
+          "2"
+        ],
+        "name": "Planejamento"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
