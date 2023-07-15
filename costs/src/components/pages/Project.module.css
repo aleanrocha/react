@@ -31,7 +31,8 @@
   margin: 1em 0;
   transition: .5s;
   cursor: pointer;
-  height: 50px;
+  height: 40px;
+  min-width: 160px;
   border: none;
 }
 .btn:hover {color: #ffbb33;}

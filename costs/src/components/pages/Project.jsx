@@ -1,11 +1,13 @@
 import styles from './Project.module.css'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { parse, v4 as uuidv4 } from 'uuid'
 
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import Message from '../layout/Message'
 import ProjectForm from '../project/ProjectForm'
+import ServiceForm from '../service/ServiceForm'
 
 const Project = () => {
   const { id } = useParams()
@@ -49,6 +51,32 @@ const Project = () => {
   }
   const toggleProjectForm = () => {setShowProjectForm(!showProjectForm)}
   const toggleServiceForm = () => {setShowServiceForm(!showServiceForm)}
+  const createService = (project) => {
+    setMessage('')
+    //last service
+    const lastService = project.services[project.services.length -1]
+    lastService.id = uuidv4()
+    const lastServiceCost = lastService.cost
+    const newCosts = parseFloat(project.costs) + parseFloat(lastServiceCost) 
+    if (newCosts > parseFloat(project.project_budget)) {
+      setMessage('Orçamento ultrapassado, verifique o valor do serviço!')
+      setType('error')
+      project.services.pop()
+      return false
+    }
+    // add service cost to project total cost
+    project.costs = newCosts
+    // update project
+    fetch(`http://localhost:5000/projects/${project.id}`, {
+      method: 'PATCH',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(project)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+    }).catch(err => console.log(err))
+  }
   return (
     <>
       {project.project_name ? (
@@ -86,7 +114,13 @@ const Project = () => {
                 </button>
               </div>
               <div className={styles.project_info}>
-                {showServiceForm && <p>Formulário de serviço</p>}
+                {showServiceForm && (
+                  <ServiceForm 
+                    handleSubmit={createService}
+                    btnText='Adicionar serviço'
+                    projectData={project}
+                  />
+                )}
               </div>
             </div>
             <h3>Serviços</h3>
