@@ -1,6 +1,5 @@
 .project_details {padding: 2em; width: 100%;}
-.project_details h2,
-.project_details p {margin-bottom: .5em;}
+.project_details p, h3 {margin-bottom: .5em;}
 .project_details h1 {
   background-color: #222;
   color: #ffbb33;
@@ -23,6 +22,7 @@
   margin-bottom: .5em;
   flex-wrap: wrap;
 }
+.align_content {margin-right: 1em;}
 .btn {
   background-color: #222;
   color: #fff;

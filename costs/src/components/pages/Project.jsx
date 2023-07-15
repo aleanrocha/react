@@ -11,6 +11,7 @@ const Project = () => {
   const { id } = useParams()
   const [project, setProject] = useState([])
   const [showProjectForm, setShowProjectForm] = useState(false)
+  const [showServiceForm, setShowServiceForm] = useState(false)
   const [message, setMessage] = useState()
   const [type, setType] = useState()
 
@@ -47,6 +48,7 @@ const Project = () => {
     }).catch(err => console.log(err))
   }
   const toggleProjectForm = () => {setShowProjectForm(!showProjectForm)}
+  const toggleServiceForm = () => {setShowServiceForm(!showServiceForm)}
   return (
     <>
       {project.project_name ? (
@@ -76,6 +78,21 @@ const Project = () => {
                 </div>
               )}
             </div>
+            <div className={styles.service_form_container}>
+              <div className={styles.align_content}>
+                <h2>Adicione um serviço</h2>
+                <button className={styles.btn} onClick={toggleServiceForm}>
+                  {!showServiceForm ? `Adicionar serviço` : `Fechar`}
+                </button>
+              </div>
+              <div className={styles.project_info}>
+                {showServiceForm && <p>Formulário de serviço</p>}
+              </div>
+            </div>
+            <h3>Serviços</h3>
+            <Container customClass='start'>
+              <p>Itens de serviços</p>
+            </Container>
           </Container>
         </div>
       ) : (
