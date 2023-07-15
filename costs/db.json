@@ -2,12 +2,12 @@
   "projects": [
     {
       "project_name": "Projeto 01",
-      "project_budget": "1250.54",
+      "project_budget": "4567",
       "category": {
         "id": [
-          "1"
+          "2"
         ],
-        "name": "Infra"
+        "name": "Planejamento"
       },
       "costs": 0,
       "services": [],
@@ -15,7 +15,7 @@
     },
     {
       "project_name": "Projeto 02",
-      "project_budget": "9500",
+      "project_budget": "12345",
       "category": {
         "id": [
           "2"

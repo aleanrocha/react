@@ -29,6 +29,7 @@ const Projects = () => {
     }, 1000)
   }, [])
   const removeProject = (id) => {
+    setProjectMessage('')
     fetch(`http://localhost:5000/projects/${id}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'}
@@ -36,7 +37,7 @@ const Projects = () => {
     .then(res => res.json())
     .then(data => {
       setProjectC(projectC.filter(project => project.id !== id))
-      setProjectMessage('Projeto removido co sucsso!')
+      setProjectMessage('Projeto removido com sucsso!')
     }).catch(err => console.log(err))
   }
   return (
