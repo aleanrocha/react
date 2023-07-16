@@ -9,9 +9,10 @@
         ],
         "name": "Planejamento"
       },
-      "costs": 242,
+      "costs": 0,
       "services": [],
-      "id": 1
+      "id": 1,
+      "cost": 2901
     },
     {
       "project_name": "Projeto 02",
