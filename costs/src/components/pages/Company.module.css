@@ -1,0 +1,17 @@
+.content_container {
+  padding: 40px;
+  margin: auto;
+}
+.logo {
+  background-color: #7a7a7a;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {max-width: 800px;}
+.content p {margin: 20px 0; text-align: justify;}
