@@ -1,0 +1,12 @@
+.contact_container {
+  width: 90%;
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #b1adad;
+  border-radius: 10px;
+}
+.contact_container h1 {
+  padding: 20px;
+  text-align: center;
+}
